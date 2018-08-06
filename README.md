@@ -6,3 +6,19 @@ This repository impliments paper : https://ieeexplore.ieee.org/stamp/stamp.jsp?t
     histogram based thresholding, watershed for traffic sign extraction.
     
 Few test images are also there to test the segmentation code.
+
+
+TODO: 
+
+BatchNorm
+
+Increase Accuracy On Neural Net
+
+
+Faster Clutering/Alternative
+
+---Read Papers
+    - SURF Maths
+    
+Try Only Surf By Increasing Key Point Numbers
+
