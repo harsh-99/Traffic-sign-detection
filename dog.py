@@ -1,5 +1,7 @@
 #To create the training data to a csv file
-
+#Input feature of surf- 16*64
+#Input feature of HOG 3780
+#total input feature is 4804
 
 import cv2 
 import pandas as pd 
