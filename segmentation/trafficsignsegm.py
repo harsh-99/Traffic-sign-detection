@@ -19,17 +19,7 @@ kernel = np.ones((3,3),np.uint8)
 erosion = cv2.erode(thresholded, kernel, iterations = 1)
 dilate = cv2.dilate(erosion, kernel, iterations = 0)
 median = cv2.medianBlur(dilate, 3)
-image_contour, contours, hierarchy = cv2.findContours(median, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-# image_contour = cv2.drawContours(img, contours, -1, (0,255,0), 3)
 
-# cv2.imshow('contour', image_contour)
-roi = []
-for i in range(len(contours)) :
-	x, y, w, h = cv2.boundingRect(contours[i])
-	img = cv2.rectangle(img, (x - 5,y - 5), (x + w + 5, y + h + 5), (0, 255, 0), 2)
-	roi.append(img[x - 5:x + w + 5, y - 5:y + h + 5])
-print len(roi)
-'''
 # sure background area
 sure_bg = cv2.dilate(median, kernel, iterations = 3)
 # cv2.imshow('sure bg',  sure_bg)
@@ -69,11 +59,10 @@ cv2.imshow('roi', roi)
 
 img[markers == -1] = [0, 255, 0]
 
-'''
+
 plt.hist(normalised_red.ravel(), 256, [0,256])
 # plt.show()
 # cv2.imshow('thresh', thresholded)
-cv2.namedWindow('final_output', cv2.WINDOW_NORMAL) 
 cv2.imshow('final_output', img)
 # cv2.imshow('image_dilate', dilate)
 # cv2.imshow('median', median)
