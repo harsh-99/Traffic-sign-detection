@@ -7,7 +7,7 @@ Most of the current state of art solution to this well researched problem is usi
 
 Firstly we tried a basic image processing based pipeline for traffic sign detection. Here in this, we know that traffic sign generally have red color so we take the red channel of the given image and apply threshold. We thresholded top 20% of total pixels. After this we used watershed algorithm as well as contour detection to propose region out of that.(The code for this is /segmentation/fianl_segmentation_ip.py). After this we tried to propose using Haar. We trained a Haar cascade classifier to propose ROI, the results for the same can seen /output/roi_haar. The method worked pretty well with a decent accuracy. The time taken by the haar Region of proposal is 0.1 seconds. We have also tried to implement the cascade classifier using cuda enabled opencv. The code for the same can be found at /GPU_implemetation/haar.cpp. The only boundation to implement this to have cuda enabled opencv in the machine.   
 
- 
+ ![alt text](https://github.com/harsh-99/Traffic-sign-detection/blob/new/Outputs/roi_haar/roiimg1.jpg)
 
 ### Feature descriptors
 
