@@ -67,7 +67,7 @@ for i in range(low, high+1):
 
 			surf = cv2.xfeatures2d.SURF_create(hessianThreshold=0)
 			kp,des = surf.detectAndCompute(img,None)
-			img4 = cv2.drawKeypoints(img,kp,None,(255,0,0),0)
+			# img4 = cv2.drawKeypoints(img,kp,None,(255,0,0),0)
 
 			kmeans = None
 			surf_centers = None
@@ -87,16 +87,16 @@ for i in range(low, high+1):
 				continue
 
 			h = hog.compute(img_hog)
-			print('x')
+			print('h')
 			t = np.array(h)
-			print(t.shape)
+			print("The HOG array shape is ",t.shape)
 			print(surf_centers.shape)
 			print('bow')
 			t = t.reshape([1,-1])
 			surf_centers = surf_centers.reshape([1,-1])
 
 			t = np.hstack((t,surf_centers))
-			print(t.shape)
+			print("The shape after stacking is",t.shape)
 			print('bw2')
 			# surf=cv2.xFeatures2d.surf_create()
 
@@ -112,7 +112,7 @@ for i in range(low, high+1):
 			# 	l+=1
 			# file.write("\n")
 
-			print(t)
+			print("The stacked array is ",t)
 
 			q = np.array([prediction])
 			q = q.reshape([1,1])
