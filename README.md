@@ -9,7 +9,7 @@ Firstly we tried a basic image processing based pipeline for traffic sign detect
 
  
 
-### Prerequisites
+### Feature descriptors
 
 What things you need to install the software and how to install them
 
@@ -17,7 +17,7 @@ What things you need to install the software and how to install them
 Give examples
 ```
 
-### Installing
+### Neural Network
 
 A step by step series of examples that tell you how to get a development env running
 
