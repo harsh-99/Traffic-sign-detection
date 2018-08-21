@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 2.8)
+set (CMAKE_CXX_STANDARD 11)
+project( DisplayImage )
+find_package( OpenCV REQUIRED )
+add_executable( DisplayImage DisplayImage.cpp )
+target_link_libraries( DisplayImage ${OpenCV_LIBS} )
+
+project( surf )
+find_package( OpenCV REQUIRED )
+add_executable( surf surf.cpp )
+target_link_libraries( surf ${OpenCV_LIBS} )
