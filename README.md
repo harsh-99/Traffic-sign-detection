@@ -10,15 +10,8 @@ Firstly we tried a basic image processing based pipeline for traffic sign detect
  ![alt text](https://github.com/harsh-99/Traffic-sign-detection/blob/new/Outputs/roi_haar/roiimg4.jpg)
  ![alt text](https://github.com/harsh-99/Traffic-sign-detection/blob/new/Outputs/roi_haar/roiimg3.jpg)
 
-<<<<<<< HEAD
-
 ## Feature descriptors
-=======
- ![alt text](https://github.com/harsh-99/Traffic-sign-detection/blob/new/Outputs/roi_haar/roiimg1.jpg)
- ![alt text](https://github.com/harsh-99/Traffic-sign-detection/blob/new/Outputs/roi_haar/roiimg4.jpg)
- ![alt text](https://github.com/harsh-99/Traffic-sign-detection/blob/new/Outputs/roi_haar/roiimg3.jpg)
-### Feature descriptors
->>>>>>> 602b48f2d0f22caf54164ef10ae0b9b877dc9fd1
+
 
 There are two ways to proceed after getting region of interest-:
 - Using feature descriptor like SURF, SIFT, HOG
