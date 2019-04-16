@@ -42,4 +42,4 @@ Segmentation/final_segmentation - Uses basic image processing technique to detec
 
 ### Paper 
 
-To have a better understanding of our work have a look at this <a href=https://www.researchgate.net/publication/331780191_Traffic_Sign_Classification_using_Hybrid_HOG-SURF_Features_and_Convolutional_Neural_Networks> link</a> 
+To have a better understanding of our work, have a look at this <a href=https://www.researchgate.net/publication/331780191_Traffic_Sign_Classification_using_Hybrid_HOG-SURF_Features_and_Convolutional_Neural_Networks>paper</a> 
