@@ -39,3 +39,7 @@ Neural Network/CNN_end_to_end.ipynb - End to End CNN architecture
 Neural Network/NN_TRAFFIC_SIGN.ipynb - End to End Neural Network architecture
 Segmentation/final_segmentation - Uses basic image processing technique to detect the traffic sign.
 ```
+
+### Paper 
+
+To have a better understanding of our work have a look at this <a href=https://www.researchgate.net/publication/331780191_Traffic_Sign_Classification_using_Hybrid_HOG-SURF_Features_and_Convolutional_Neural_Networks> link</a> 
